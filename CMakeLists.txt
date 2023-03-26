@@ -283,8 +283,11 @@ set(VCG_HEADERS
 		wrap/callback.h
 		)
 
-set(SOURCES
-		)
+add_library(vcglib_shared SHARED ${VCG_HEADERS})
+set_target_properties(vcglib_shared PROPERTIES LINKER_LANGUAGE CXX)
+set_target_properties(vcglib_shared PROPERTIES OUTPUT_NAME "vcglib_shared")
+target_include_directories (vcglib_shared PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/vcg)
+install(TARGETS vcglib_shared DESTINATION lib)
 
 if (VCG_HEADER_ONLY)
 	if (NOT TARGET vcglib) # to be sure that vcglib target is created just one time
