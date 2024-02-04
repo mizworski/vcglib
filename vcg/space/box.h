@@ -126,7 +126,7 @@ public:
 		 if (N==3) Inflate( PointType (k,k,k));
 	}
 		/** Enlarges the box dimensions by a fixed delta.
-			@param delta Point in D space. If delta > 0 box enlarges. If delta < 0 box reduces.
+			@param delta Vertex in D space. If delta > 0 box enlarges. If delta < 0 box reduces.
 		*/
 	void Inflate( const PointType & delta )
 	{

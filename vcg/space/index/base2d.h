@@ -112,7 +112,7 @@ public:
 		It also finds the closest point and minimum distance.
 
 	Template Parameters:
-		OBJPOINTDISTFUNCTOR : Object-Point distance functor type;
+		OBJPOINTDISTFUNCTOR : Object-Vertex distance functor type;
 		                      this type must implement an operator () with signature
 													  bool operator () (const ObjType & obj, const CoordType & p, ScalarType & d, CoordType & q)
 													 where:
@@ -157,7 +157,7 @@ public:
 		It also finds the closest points and minimum distances.
 
 	Template Parameters:
-		OBJPOINTDISTFUNCTOR : Object-Point distance functor type;
+		OBJPOINTDISTFUNCTOR : Object-Vertex distance functor type;
 		                      this type must implement an operator () with signature
 													  bool operator () (const ObjType & obj, const CoordType & p, ScalarType & d, CoordType & q)
 													 where:
@@ -209,7 +209,7 @@ public:
 		The GetInSphere method finds all the objects in the specified sphere
 
 	Template Parameters:
-		OBJPOINTDISTFUNCTOR : Object-Point distance functor type;
+		OBJPOINTDISTFUNCTOR : Object-Vertex distance functor type;
 		                      this type must implement an operator () with signature
 													  bool operator () (const ObjType & obj, const CoordType & p, ScalarType & d, CoordType & q)
 													 where:

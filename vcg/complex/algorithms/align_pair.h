@@ -622,7 +622,7 @@ in
 			Matrix44d &out,					// computed transformation
 			std::vector<Point3d> &pfix,		// (red) corresponding vertices on src
 			std::vector<Point3d> &nfix, 	// (red) corresponding normals on src
-			std::vector<Point3d> &opmov,	// chosen vertices on trg (verdi) before the input transormation (Original Point Target)
+			std::vector<Point3d> &opmov,	// chosen vertices on trg (verdi) before the input transormation (Original Vertex Target)
 			std::vector<Point3d> &onmov, 	// chosen normals on trg (verdi)
 			Histogramf &h,
 			Stat &as)

@@ -53,7 +53,7 @@ public:
     inline  Box3() { this->SetNull(); }
         /// Min Max constructor
     inline  Box3( const Point3<BoxScalarType> & mi, const Point3<BoxScalarType> & ma ) { min = mi; max = ma; }
-    /// Point Radius Constructor
+    /// Vertex Radius Constructor
     inline Box3(const Point3<BoxScalarType> & center, const BoxScalarType & radius) {
         min = center-Point3<BoxScalarType>(radius,radius,radius);
         max = center+Point3<BoxScalarType>(radius,radius,radius);
